@@ -13,6 +13,7 @@ const styles = {
 const App = () => (
   <RuthLeaf style={styles}>
     <Input />
+    <hr />
     <Output />
   </RuthLeaf>
 );

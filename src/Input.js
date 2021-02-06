@@ -8,13 +8,19 @@ const Input = () => (
       {(context) => (
         <div>
           <div>
-            <input
-              type="text"
-              value={context.name}
-              onChange={(e) => context.updateName(e.target.value)}
-            />
+            <form>
+              <label for="input">Input: </label>
+              <input
+                id="input"
+                type="text"
+                placeholder="por ejemplo: Peron"
+                value={context.name}
+                onChange={(e) => context.updateName(e.target.value)}
+              />
+            </form>
           </div>
-          <button onClick={context.unaCallback}>callback</button>
+          <p />
+          <button onClick={context.unaCallback}>una Callback cualquiera</button>
         </div>
       )}
     </Consumer>

@@ -1,7 +1,7 @@
 import React from "react";
 
-const Context = React.createContext();
+const Ctx = React.createContext();
 
-export const { Consumer } = Context;
+export const { Consumer } = Ctx;
 
-export default Context;
+export default Ctx;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Context from "./Context";
 
 const Provider = (props) => {
-  const [name, setName] = useState("Peron");
+  const [name, setName] = useState("");
 
   const unaCallback = () => {
     alert(`viva ${name}`);
