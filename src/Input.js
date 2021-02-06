@@ -1,6 +1,6 @@
 import React from "react";
 import { Consumer } from "./Context";
-import InputTitle from "./InputTitle";
+import Output from "./Output";
 
 const Input = () => (
   <div>
