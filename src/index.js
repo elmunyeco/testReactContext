@@ -1,9 +1,10 @@
 import React from "react";
 import { render } from "react-dom";
 
-import RuthLeaf from "./RuthLeaf";
+import Ruth from "./Ruth";
 import Input from "./Input";
 import Output from "./Output";
+import Tonbo from "./Tonbo";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -11,11 +12,13 @@ const styles = {
 };
 
 const App = () => (
-  <RuthLeaf style={styles}>
+  <Ruth style={styles}>
     <Input />
     <hr />
     <Output />
-  </RuthLeaf>
+    <hr />
+    <Tonbo />
+  </Ruth>
 );
 
 render(<App />, document.getElementById("root"));

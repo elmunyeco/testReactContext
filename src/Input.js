@@ -14,13 +14,11 @@ const Input = () => (
                 id="input"
                 type="text"
                 placeholder="por ejemplo: Peron"
-                value={context.name}
-                onChange={(e) => context.updateName(e.target.value)}
+                value={context.nombre}
+                onChange={(e) => context.updateNombre(e.target.value)}
               />
             </form>
           </div>
-          <p />
-          <button onClick={context.unaCallback}>una Callback cualquiera</button>
         </div>
       )}
     </Consumer>

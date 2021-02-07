@@ -1,23 +1,23 @@
 import React, { useState } from "react";
-import Context from "./Context";
+import MyCtx from "./Context";
 
 const Provider = (props) => {
-  const [name, setName] = useState("");
+  const [nombre, setNombre] = useState("");
 
   const unaCallback = () => {
-    alert(`viva ${name}`);
+    alert(`viva ${nombre}`);
   };
 
   return (
-    <Context.Provider
+    <MyCtx.Provider
       value={{
-        name,
-        updateName: (name) => setName(name),
+        nombre,
+        updateNombre: (nombre) => setNombre(nombre),
         unaCallback: unaCallback
       }}
     >
       {props.children}
-    </Context.Provider>
+    </MyCtx.Provider>
   );
 };
 
