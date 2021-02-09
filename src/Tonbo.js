@@ -1,7 +1,7 @@
 import React from "react";
 import { Consumer } from "./Context";
 
-const Input = () => (
+const Tonbo = () => (
   <div>
     <Consumer>
       {(context) => (
@@ -13,4 +13,4 @@ const Input = () => (
   </div>
 );
 
-export default Input;
+export default Tonbo;
