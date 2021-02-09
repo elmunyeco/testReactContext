@@ -11,6 +11,8 @@ const styles = {
   textAlign: "center"
 };
 
+/* a ver si sincroniza */
+
 const App = () => (
   <Ruth style={styles}>
     <Input />
