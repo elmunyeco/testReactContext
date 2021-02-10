@@ -3,13 +3,19 @@ import MyCtx from "./Context";
 
 const Provider = (props) => {
   const [nombre, setNombre] = useState("")
+  const [aCallback, setCallback] = useState({})
+
 
   const unaCallback = () => {
     alert(`viva ${nombre}`)
   }
 
-  const anotherCallback = (fx) => {
-    fx(`sacado del contexto: ${nombre}`)
+  const passCallback = (fx) => {
+    setCallback(fx)
+  }
+
+  const execPassedCallback = () => {
+    aCallback.fx && aCallback.fx(nombre)
   }
 
   return (
@@ -18,7 +24,8 @@ const Provider = (props) => {
         nombre,
         updateNombre: (nombre) => setNombre(nombre),
         unaCallback: unaCallback,
-        anotherCallback: (fx) => anotherCallback(fx)
+        passCallback: (fx) => passCallback({fx}),
+        execPassedCallback: execPassedCallback,
       }}
     >
       {props.children}

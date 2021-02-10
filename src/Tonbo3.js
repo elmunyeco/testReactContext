@@ -1,16 +1,16 @@
 import React from "react";
 import { Consumer } from "./Context";
 
-const Tonbo = () => (
+const Tonbo3 = () => (
   <div>
     <Consumer>
       {(context) => (
         <div>
-          <button onClick={context.unaCallback}>Hago algo con el valor de input</button>
+          <button onClick={()=>context.execPassedCallback()}>Ejecuto Una Callback cualquiera</button>
         </div>
       )}
     </Consumer>
   </div>
 );
 
-export default Tonbo;
+export default Tonbo3;
